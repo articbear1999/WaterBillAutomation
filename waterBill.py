@@ -96,8 +96,8 @@ dateList = []
 # for every option/address that were trying to download the water bill for,
 # download it
 
-#for element in range(optLen - 1):  # final drop down option is empty, so we have to have one less than the len of it
-for element in range(0,10):
+for element in range(optLen - 1):  # final drop down option is empty, so we have to have one less than the len of it
+#for element in range(0,10):
     optionList = browser.find_elements_by_tag_name("option")
     # append the address to a list so that we can rename these files later using this list as the naming list
     addrList.append(optionList[element].text)
